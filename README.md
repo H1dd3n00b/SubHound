@@ -19,6 +19,5 @@ Installation & Usage:
 7) Type in the domain you want to scan for subdomains
 8) Follow the script instructions, your terminal screen will be cleared occassionnally, this is intended...
 9) Script takes about 1-5 minutes to complete
-10) For better performance, run the script as: sudo ./SubHound.sh
-11) ENJOY!
+10) ENJOY!
    
