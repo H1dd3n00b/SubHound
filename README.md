@@ -20,4 +20,8 @@ Installation & Usage:
 8) Follow the script instructions, your terminal screen will be cleared occassionnally, this is intended...
 9) Script takes about 1-5 minutes to complete
 10) ENJOY!
-   
+
+COMMON ISSUES:
+You won't be able to open all found subdomains in firefox if you are running the script as sudo. To fix this, just copy the SubHound.sh script to anywhere (for example your Desktop) and run it normally (not as sudo) from there.
+If crt.ch outputs 0 subdomains found, try running the script again after a few minutes.
+
