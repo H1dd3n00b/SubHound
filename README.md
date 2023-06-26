@@ -23,8 +23,8 @@ cd SubHound/Scripts
 chmod +x *
 4) Install the dependencies:
 ./DependenciesInstall.sh
-5) Run the script (avoid using sudo to prevent interference with Firefox):
-./SubHound.sh
+5) Run the script:
+./SubHound.sh (or even better as sudo: sudo./SubHound.sh)
 6) Enter the domain you want to scan for subdomains when prompted.
 7) Follow the instructions provided by the script. The terminal screen may be cleared occasionally, which is intended.
 ```
