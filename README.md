@@ -29,14 +29,3 @@ chmod +x *
 7) Follow the instructions provided by the script. The terminal screen may be cleared occasionally, which is intended.
 ```
 Enjoy using SubHound!
-
-Note: It is recommended not to run the script with sudo as it may affect the functionality of Firefox.
-
-## KNOWN ISSUES:
-```
-You won't be able to open all found subdomains in Firefox if you are running the script as sudo. To fix this, follow these steps:
-
-Copy the SubHound.sh script to a location of your choice (e.g., your Desktop).
-Make sure you are not running the script with sudo privileges.
-Open a terminal and navigate to the location where you copied the SubHound.sh script.
-```
