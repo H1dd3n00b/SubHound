@@ -133,7 +133,7 @@ then
  	sleep 2
 	echo "Opening found alive subdomains in a separate tab in Firefox..."
 	sleep 2
-	sudo nohup firefox $(cat guarana.rs.final.txt) >/dev/null 2>&1 &
+	sudo nohup firefox $(cat $url.final.txt) >/dev/null 2>&1 &
  	sleep 2
  	sudo chown kali:kali /home/kali/.Xauthority
 	sleep 2
