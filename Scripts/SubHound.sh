@@ -130,10 +130,11 @@ read answer
 if [ $answer = "y" ] || [ $answer = "Y" ]
 then
 	sudo chown root:root /home/kali/.Xauthority
- 	sleep 1
+ 	sleep 2
 	echo "Opening found alive subdomains in a separate tab in Firefox..."
-	sleep 1
-	firefox $(cat $url.final.txt) &
+	sleep 2
+	sudo nohup firefox $(cat guarana.rs.final.txt) >/dev/null 2>&1 &
+ 	sleep 2
  	sudo chown kali:kali /home/kali/.Xauthority
 	sleep 2
 elif
