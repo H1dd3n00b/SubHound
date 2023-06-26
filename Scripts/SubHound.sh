@@ -129,6 +129,8 @@ echo -e "${BRIGHT_WHITE}Would you like to take a look at the alive subdomains in
 read answer
 if [ $answer = "y" ] || [ $answer = "Y" ]
 then
+	sudo chown root:root /home/kali/.Xauthority
+ 	sleep 1
 	echo "Opening found alive subdomains in a separate tab in Firefox..."
 	sleep 1
 	firefox $(cat $url.final.txt) &
