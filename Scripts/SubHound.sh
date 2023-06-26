@@ -134,6 +134,7 @@ then
 	echo "Opening found alive subdomains in a separate tab in Firefox..."
 	sleep 1
 	firefox $(cat $url.final.txt) &
+ 	sudo chown kali:kali /home/kali/.Xauthority
 	sleep 2
 elif
 	[ $answer = "N" ] || [ $answer = "n" ]
