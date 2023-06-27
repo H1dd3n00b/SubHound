@@ -106,6 +106,9 @@ echo "Done!"
 echo -e "${BRIGHT_BLUE}Taking screenshots of unique and alive subdomains with gowitness...${NC}"
 sleep 1
 gowitness file -f $url.final.txt
+sleep 1
+sudo chmod 777 screenshots/
+sleep 0.5
 echo "Done!"
 echo -e "${BRIGHT_BLUE}Checking for potential subdomain takeover with subjack...${NC}"
 subjack -w $url.final.txt -v >> $url.subjack.txt
