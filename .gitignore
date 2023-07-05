@@ -1,0 +1,3 @@
+# Ignore generated output files
+$url/*.txt
+$url/*.png
