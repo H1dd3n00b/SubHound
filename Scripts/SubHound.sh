@@ -132,13 +132,15 @@ echo -e "${BRIGHT_WHITE}Would you like to take a look at the alive subdomains in
 read answer
 if [ $answer = "y" ] || [ $answer = "Y" ]
 then
-	sudo chown root:root /home/kali/.Xauthority
- 	sleep 2
+	original_owner=$(stat -c %U $XAUTHORITY)
+   	original_group=$(stat -c %G $XAUTHORITY)
+       	sudo chown root:root $XAUTHORITY
+       	sleep 2
 	echo "Opening found alive subdomains in a separate tab in Firefox..."
 	sleep 2
 	sudo nohup firefox $(cat $url.final.txt) >/dev/null 2>&1 &
- 	sleep 2
- 	sudo chown kali:kali /home/kali/.Xauthority
+	sleep 2
+	sudo chown "$original_owner":"$original_group" $XAUTHORITY
 	sleep 2
 elif
 	[ $answer = "N" ] || [ $answer = "n" ]
@@ -153,7 +155,7 @@ else
 fi
 echo "Cleaning up..."
 sleep 1
-clear
+#clear
 echo "All done!"
 sleep 1
 echo "Your results can be observed below"
@@ -176,4 +178,3 @@ echo "Thanks for using my script!"
 sleep 0.5
 echo "Good luck and happy hacking!"
 sleep 0.5
-
