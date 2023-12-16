@@ -42,7 +42,7 @@ sleep 1
 cd $url
 echo -e "${BRIGHT_BLUE}Hunting for subdomains using subfinder...${NC}"
 sleep 1
-subfinder -d $url -silent -nC -nW -o $url.subfinder1.txt
+subfinder -d $url -silent -nW -o $url.subfinder1.txt
 cat $url.subfinder1.txt | sort -u >> $url.subfinder.txt
 echo "Done!"
 sleep 0.5
