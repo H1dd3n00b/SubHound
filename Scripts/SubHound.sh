@@ -105,7 +105,7 @@ rm $url.final1.txt
 echo "Done!"
 echo -e "${BRIGHT_BLUE}Taking screenshots of unique and alive subdomains with gowitness...${NC}"
 sleep 1
-gowitness file -f $url.final.txt
+gowitness scan file -f $url.final.txt
 sleep 1
 sudo chmod 777 screenshots/
 sleep 0.5
